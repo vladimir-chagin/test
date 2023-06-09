@@ -1,0 +1,51 @@
+.container {
+    font-size: 16px;
+    border: 1px dotted lightgray;
+    padding: 10px;
+}
+
+.child {
+    width: auto;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2em;
+    margin-left: 2em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.child:hover {
+    cursor: pointer;
+}
+
+.child .child-bottom-border {
+    background-color: black;
+    width: 0;
+}
+
+.task1-container .child .child-bottom-border {
+    transition-property: width;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.task1-container .child:hover .child-bottom-border {
+    width: 100%;
+}
+
+.child-bottom-border {
+    margin: 0;
+    padding: 0;
+    height: 1px;
+}
+
+.child:first-child {
+    margin-left: 0;
+    margin-right: 2em;
+}
+
+.child:last-child {
+    margin-right: 0;
+    margin-left: 2em;
+}
